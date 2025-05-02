@@ -22,7 +22,66 @@ I am especially interested in:
 Beyond science, I enjoy exploring the intersections of chemistry and storytelling — through poetry, photography, and visual media.
 
 ---
+## Education
 
+<style>
+/* 🌟 Logo shadow */
+.edu-block img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+/* ✅ Default (light mode) text color */
+.edu-block div {
+  color: #111;
+}
+
+/* 🌙 Dark mode override */
+@media (prefers-color-scheme: dark) {
+  .edu-block div {
+    color: #e0e0e0;
+  }
+}
+
+/* 📱 Responsive adjustments (optional, for tighter phones) */
+@media (max-width: 480px) {
+  .edu-block div {
+    font-size: 14px;
+  }
+  .edu-block img {
+    height: 60px;
+  }
+}
+</style>
+
+<!-- 🎓 Education cards -->
+<div class="edu-block" style="display: flex; justify-content: center; gap: 60px; align-items: center; flex-wrap: wrap; text-align: center; font-size: 16px; line-height: 1.4;">
+
+  <div style="width: 150px;">
+    <div><strong>Ph.D. Chemistry</strong><br/>2023</div>
+    <a href="https://www.rochester.edu/" target="_blank" rel="noopener noreferrer">
+      <img src="/images/university-of-rochester-meliora-logo-77hw57i4ipxx7nhf-982191025.jpg" alt="University of Rochester logo" style="height: 80px; width: auto; margin-top: 8px;" />
+    </a>
+  </div>
+
+  <div style="width: 150px;">
+    <div><strong>M.Sc. Chemistry</strong><br/>2016</div>
+    <a href="https://www.iitbbs.ac.in/" target="_blank" rel="noopener noreferrer">
+      <img src="/images/Indian_Institute_of_Technology_Bhubaneswar_Logo.svg-2329274961-2.png" alt="IIT Bhubaneswar logo" style="height: 80px; width: auto; margin-top: 8px;" />
+    </a>
+  </div>
+
+  <div style="width: 150px;">
+    <div><strong>B.Sc. Honours Chemistry</strong><br/>2014</div>
+    <a href="https://www.caluniv.ac.in/" target="_blank" rel="noopener noreferrer">
+      <img src="/images/calcuttauniversity-22-1513918288-1778712801.jpg" alt="University of Calcutta logo" style="height: 80px; width: auto; margin-top: 8px;" />
+    </a>
+  </div>
+
+</div>
+
+
+
+---
 ## Education
 
 <style>
