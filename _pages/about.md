@@ -21,6 +21,7 @@ I am especially interested in:
 
 Beyond science, I enjoy exploring the intersections of chemistry and storytelling — through poetry, photography, and visual media.
 
+
 ---
 ## Education
 
