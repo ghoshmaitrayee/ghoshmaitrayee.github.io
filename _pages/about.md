@@ -80,8 +80,7 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
 </div>
 
 --- 
-{%comment}
-
+<!-- 
 ## Education: Check
 
 <style>
@@ -173,4 +172,4 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
 
 </div>
 
-{%end comment%}
+ -->
