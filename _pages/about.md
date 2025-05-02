@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Maitrayee Ghosh..."
+title: "Maitrayee's Home Page"
 author_profile: true
 redirect_from: 
   - /about/
