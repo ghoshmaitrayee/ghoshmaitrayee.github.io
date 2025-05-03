@@ -209,19 +209,19 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
 
   <div class="awards-list">
     <div class="award-entry">
-      <img src="/images/laurel.png" alt="Laurel icon">
+      <img src="/images/awards/laurel-1.png" alt="Laurel icon">
       <div>IBM Zerner Graduate Student Award (2020)</div>
     </div>
     <div class="award-entry">
-      <img src="/images/laurel.png" alt="Laurel icon">
+      <img src="/images/awards/laurel-yellow.png" alt="Laurel icon">
       <div>Frank J. J. Horton Research Fellowship (2018–2023)</div>
     </div>
     <div class="award-entry">
-      <img src="/images/laurel.png" alt="Laurel icon">
+      <img src="/images/awards/laurel-1.png" alt="Laurel icon">
       <div>Sherman-Clarke Fellowship (2017)</div>
     </div>
     <div class="award-entry">
-      <img src="/images/laurel-1.png" alt="Laurel icon">
+      <img src="/images/awards/laurel-yellow.png" alt="Laurel icon">
       <div>DST-INSPIRE Scholarship for Higher Education (2011–2016)</div>
     </div>
   </div>
