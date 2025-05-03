@@ -234,4 +234,4 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
       <a href="https://dst.gov.in/inspire-scheme-innovation-science-pursuit-inspired-research" target="_blank">DST-INSPIRE Scholarship for Higher Education (2011–2016)</a>
     </div>
   </div>
-</div>
+
