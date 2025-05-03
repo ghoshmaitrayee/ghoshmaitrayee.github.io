@@ -1,7 +1,10 @@
 ---
 title: "Lumos"
 permalink: /lumos/
+layout: single
+author_profile: true
 ---
+
 
 <!-- Load elegant font -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
