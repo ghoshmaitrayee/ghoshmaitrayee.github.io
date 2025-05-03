@@ -263,9 +263,7 @@ issues remain for mobile version:
     color: #e0e0e0;
   }
 }
-</style>
-
--->
+</style> -->
 
 <!-- 3rd version of style -->
 
