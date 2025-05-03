@@ -226,3 +226,75 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
     </div>
   </div>
 </div>
+
+--- 
+
+<style>
+.awards-section {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.awards-section h2 {
+  font-family: serif;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.award-entry {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  color: inherit;
+}
+
+.award-entry img {
+  width: 40px;
+  height: auto;
+}
+
+.award-entry a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.award-entry a:hover {
+  text-decoration: underline;
+}
+
+</style>
+
+
+  <div class="awards-list">
+    <div class="award-entry">
+      <img src="/images/awards/laurel-1.png" alt="Laurel icon">
+      <a href="https://sanibelsymposium.qtp.ufl.edu/awards-poster-sizes/winners/" target="_blank">IBM Zerner Graduate Student Award (2020)</a>
+    </div>
+    <div class="award-entry">
+      <img src="/images/awards/laurel-yellow.png" alt="Laurel icon">
+      <a href="https://www.lle.rochester.edu/lle-in-focus-issue-4-the-horton-fellowship-program/" target="_blank">Frank J. J. Horton Research Fellowship (2018–2023)</a>
+    </div>
+    <div class="award-entry">
+      <img src="/images/awards/laurel-1.png" alt="Laurel icon">
+      <a href="https://www.sas.rochester.edu/chm/news-events/awards.html#sherman" target="_blank">Sherman-Clarke Fellowship (2017)</a>
+    </div>
+    <div class="award-entry">
+      <img src="/images/awards/laurel-yellow.png" alt="Laurel icon">
+      <a href="https://dst.gov.in/inspire-scheme-innovation-science-pursuit-inspired-research" target="_blank">DST-INSPIRE Scholarship for Higher Education (2011–2016)</a>
+    </div>
+  </div>
+</div>
