@@ -235,3 +235,77 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
     </div>
   </div>
 
+---
+
+## Grants & Resources
+
+<style>
+.grant-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.grant-card {
+  background-color: transparent;
+  border: 1px solid #999;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: inherit;
+  text-align: center;
+  transition: border 0.3s;
+}
+
+.grant-card:hover {
+  border-color: #66ccff;
+}
+
+.grant-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.grant-logo {
+  margin: 12px auto;
+  height: 40px;
+  width: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .grant-card {
+    border-color: #777;
+  }
+
+  .grant-card:hover {
+    border-color: #33bbff;
+  }
+}
+</style>
+
+<div class="grant-cards">
+
+  <div class="grant-card">
+    <h3>DOE Allocation Award (2025)</h3>
+    <div><strong>Hydrocarbon Chemistry under Planetary Conditions</strong></div>
+    <img src="/images/NERSC-logo.png" alt="NERSC logo" class="grant-logo">
+    <div>PI Allocation on NERSC</div>
+    <div><strong>1.5M CPU hours</strong> &bull; <strong>50K GPU hours</strong></div>
+    <a href="https://www.nersc.gov" target="_blank">Learn more →</a>
+  </div>
+
+  <div class="grant-card">
+    <h3>DOE Allocation Award (2025)</h3>
+    <div><strong>Inertial Fusion Target Simulations</strong></div>
+    <img src="/images/NERSC-logo.png" alt="NERSC logo" class="grant-logo">
+    <div>PI Allocation on NERSC</div>
+    <div><strong>2M CPU hours</strong> &bull; <strong>100K GPU hours</strong></div>
+    <a href="https://www.nersc.gov" target="_blank">Learn more →</a>
+  </div>
+
+</div>
