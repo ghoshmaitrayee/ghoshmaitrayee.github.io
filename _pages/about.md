@@ -311,3 +311,90 @@ machine-learning in inertial fusion energy relevant conditions</strong></div>
   </div>
 
 </div>
+
+---
+
+<style>
+.grant-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.grant-card {
+  background-color: transparent;
+  border: 1px solid #999;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: inherit;
+  text-align: center;
+  transition: border 0.3s;
+}
+
+.grant-card:hover {
+  border-color: #66ccff;
+}
+
+.grant-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.grant-logo {
+  margin: 12px auto;
+  height: 40px;
+  width: auto;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.grant-logo:hover {
+  transform: scale(1.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  .grant-card {
+    border-color: #777;
+  }
+
+  .grant-card:hover {
+    border-color: #33bbff;
+  }
+}
+</style>
+
+<div class="grant-cards">
+
+  <div class="grant-card">
+    <h3>NERSC AY 2025 DOE Mission Science Allocation Award</h3>
+    <div><strong>Machine-learning based theoretical investigations of nickel and its mixtures at terrestrial
+planetary core conditions</strong></div>
+    <a href="https://www.nersc.gov" target="_blank" rel="noopener noreferrer">
+      <img src="/images/awards/NERSC-logo.png" alt="NERSC logo" class="grant-logo">
+    </a>
+    <div>Principal Investigator</div>
+    <div><strong>20K CPU hours</strong> &bull; <strong>5K GPU hours</strong></div>
+    <a href="https://www.nersc.gov" target="_blank" rel="noopener noreferrer">Learn more →</a>
+  </div>
+
+  <div class="grant-card">
+    <h3>NERSC AY 2025 DOE Mission Science Allocation Award</h3>
+    <div><strong>Equation-of-state and conductivity calculations of foams using density-functional theory and
+machine learning in inertial fusion energy relevant conditions</strong></div>
+    <a href="https://www.nersc.gov" target="_blank" rel="noopener noreferrer">
+      <img src="/images/awards/NERSC-logo.png" alt="NERSC logo" class="grant-logo">
+    </a>
+    <div>Principal Investigator</div>
+    <div><strong>19K CPU hours</strong> &bull; <strong>4K GPU hours</strong></div>
+    <a href="https://www.nersc.gov" target="_blank" rel="noopener noreferrer">Learn more →</a>
+  </div>
+
+</div>
+
+
