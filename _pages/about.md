@@ -173,3 +173,93 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
 </div>
 
  -->
+
+---
+
+## Work Experience
+
+---
+permalink: /about/
+title: "About Me"
+---
+
+<style>
+.experience-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.experience-item {
+  width: 200px;
+}
+
+.experience-item img {
+  width: 70px;
+  height: auto;
+  margin: 5px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.experience-item img:hover {
+  transform: scale(1.05);
+}
+
+.experience-item .title {
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+  .experience-item {
+    color: #e0e0e0;
+  }
+}
+</style>
+
+<div class="experience-block">
+
+  <!-- Postdoc Position -->
+  <div class="experience-item">
+    <div class="title">Postdoctoral Scholar</div>
+    <div>SLAC & Stanford University<br/>2023–Present</div>
+    <div>
+      <a href="https://www6.slac.stanford.edu" target="_blank" rel="noopener noreferrer">
+        <img src="/images/SLAC-logo.png" alt="SLAC Logo">
+      </a>
+      <a href="https://www.stanford.edu" target="_blank" rel="noopener noreferrer">
+        <img src="/images/Stanford_logo_seal.jpeg" alt="Stanford Logo">
+      </a>
+    </div>
+  </div>
+
+  <!-- PhD Position -->
+  <div class="experience-item">
+    <div class="title">PhD Researcher</div>
+    <div>University of Rochester & LLE<br/>2017–2023</div>
+    <div>
+      <a href="https://www.rochester.edu" target="_blank" rel="noopener noreferrer">
+        <img src="/images/university-of-rochester-meliora-logo-77hw57i4ipxx7nhf-982191025.jpg" alt="University of Rochester Logo">
+      </a>
+      <a href="https://www.lle.rochester.edu" target="_blank" rel="noopener noreferrer">
+        <img src="/images/LLE_logo.jpg" alt="LLE Logo">
+      </a>
+    </div>
+  </div>
+
+  <!-- Internship -->
+  <div class="experience-item">
+    <div class="title">Junior Research Fellow (Intern)</div>
+    <div>Indian Association for the Cultivation of Science<br/>2016-2017</div>
+    <a href="https://www.iacs.ac.in" target="_blank" rel="noopener noreferrer">
+      <img src="/images/IACS_logo.png" alt="IACS Logo">
+    </a>
+  </div>
+
+</div>
