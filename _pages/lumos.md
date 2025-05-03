@@ -120,7 +120,7 @@ author_profile: true
 
 <!-- Poetic image above the poems -->
 <div class="photo-block">
-  <img src="/images/lumos/IMG_6776.jpg" alt="Bengali Poem image">
+  <img src="/images/lumos/IMG_6776.jpeg" alt="Bengali Poem image">
   <p>A quiet sky. A thought unfolds.</p>
 </div>
 
