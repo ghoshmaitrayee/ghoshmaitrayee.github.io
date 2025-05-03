@@ -5,28 +5,23 @@ layout: single
 author_profile: true
 ---
 
-
-<!-- Load elegant font -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+<!-- Load elegant font, Bengali font, and lightbox assets -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const lightbox = GLightbox({ selector: '.glightbox' });
+});
+</script>
 
 <style>
-/* Fade-in animation */
 @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
+.fade-in { animation: fadeInUp 1.2s ease-out both; }
 
-.fade-in {
-  animation: fadeInUp 1.2s ease-out both;
-}
-
-/* Title section with oversized quotes */
 .lumos-wrapper {
   max-width: 800px;
   margin: 60px auto 40px auto;
@@ -34,7 +29,6 @@ author_profile: true
   text-align: center;
   position: relative;
 }
-
 .lumos-title {
   font-size: 36px;
   font-style: italic;
@@ -42,7 +36,6 @@ author_profile: true
   padding: 40px 20px;
   position: relative;
 }
-
 .lumos-title::before,
 .lumos-title::after {
   font-size: 100px;
@@ -50,20 +43,9 @@ author_profile: true
   position: absolute;
   opacity: 0.4;
 }
+.lumos-title::before { content: "\201C"; top: -20px; left: -20px; }
+.lumos-title::after { content: "\201D"; bottom: -20px; right: -20px; }
 
-.lumos-title::before {
-  content: "“";
-  top: -20px;
-  left: -20px;
-}
-
-.lumos-title::after {
-  content: "”";
-  bottom: -20px;
-  right: -20px;
-}
-
-/* Section layout */
 .lumos-section {
   max-width: 800px;
   margin: 0 auto;
@@ -72,7 +54,6 @@ author_profile: true
   line-height: 1.7;
 }
 
-/* Poems */
 .poem-block {
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -83,45 +64,113 @@ author_profile: true
   border-left: 3px solid #999;
 }
 
-/* Image sections */
-.photo-block {
+.poem-img-block {
   text-align: center;
-  margin-top: 40px;
+  margin: 30px 0;
+}
+.poem-img-block img {
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+.poem-img-block img:hover {
+  transform: scale(1.03);
 }
 
-.photo-block img {
-  max-width: 80%;
-  border-radius: 12px;
+.caption-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 8px;
+  font-style: italic;
+  flex-wrap: wrap;
+}
+.caption-row span:first-child {
+  font-family: 'Noto Serif Bengali', serif;
+}
+
+.fivek-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.fivek-img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.art-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+.art-gallery img {
+  width: 220px;
+  border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
-
-.photo-block img:hover {
-  transform: scale(1.02);
-}
-
-.photo-block p {
-  font-size: 14px;
-  margin-top: 10px;
+.art-gallery img:hover {
+  transform: scale(1.05);
 }
 </style>
 
-<!-- Header -->
 <div class="lumos-wrapper fade-in">
   <div class="lumos-title">
     Lumos — A quiet light where poems, thoughts, and small triumphs thrive.
   </div>
 </div>
 
-<!-- Content -->
 <div class="lumos-section fade-in">
 
 ## ✍️ Selected Poems
 
-<!-- Poetic image above the poems -->
-<div class="photo-block">
-  <img src="/images/lumos/IMG_6776.jpeg" alt="Bengali Poem image">
-  <p>A quiet sky. A thought unfolds.</p>
+<div class="poem-img-block">
+  <a href="/images/lumos/poem-1.jpg" class="glightbox" data-title="Poem 1">
+    <img src="/images/lumos/poem-1.jpg" alt="Poem 1">
+  </a>
+  <div class="caption-row">
+    <span>অন্ধকারে আলো ফোটে</span>
+    <span>— Light blossoms in darkness</span>
+  </div>
+</div>
+
+<div class="poem-img-block">
+  <a href="/images/lumos/poem-2.jpg" class="glightbox" data-title="Poem 2">
+    <img src="/images/lumos/poem-2.jpg" alt="Poem 2">
+  </a>
+  <div class="caption-row">
+    <span>পৃথিবীর গভীর গভীরে</span>
+    <span>— Deep in the heart of the Earth</span>
+  </div>
+</div>
+
+<div class="poem-img-block">
+  <a href="/images/lumos/poem-3.jpg" class="glightbox" data-title="Poem 2">
+    <img src="/images/lumos/poem-3.jpg" alt="Poem 2">
+  </a>
+  <div class="caption-row">
+    <span>পৃথিবীর গভীর গভীরে</span>
+    <span>— Deep in the heart of the Earth</span>
+  </div>
+</div>
+
+<div class="poem-img-block">
+  <a href="/images/lumos/IMG_6776.jpeg" class="glightbox" data-title="Poem 2">
+    <img src="/images/lumos/IMG_6779.jepg" alt="Poem 2">
+  </a>
+  <div class="caption-row">
+    <span>পৃথিবীর গভীর গভীরে</span>
+    <span>— Deep in the heart of the Earth</span>
+  </div>
 </div>
 
 <div class="poem-block">
@@ -136,9 +185,19 @@ author_profile: true
 
 ## 🏃 5K Finish (Spring 2024)
 
-<div class="photo-block">
-  <img src="/images/lumos/Lilac_Run_5K.jpg" alt="5K finish line photo">
-  <p>I ran my first 5K after a year. More than distance, it measured persistence and growth after recovering from a knee injury.</p>
+<div class="fivek-flex">
+  <img src="/images/lumos/Lilac_Run_5K.jpg" alt="5K finish" class="fivek-img">
+  <div>
+    <h3>5K Finish</h3>
+    <p>I ran my first 5K after a year. More than distance, it measured persistence and growth after recovering from a knee injury.</p>
+  </div>
+</div>
+
+## 🎨 Digital Art
+
+<div class="art-gallery">
+  <a href="/images/lumos/Warli-art-1.jpg" class="glightbox"><img src="/images/lumos/art1.jpg" alt="Art 1"></a>
+  <a href="/images/lumos/Warli-art-2.jpg" class="glightbox"><img src="/images/lumos/art2.jpg" alt="Art 2"></a>
 </div>
 
 </div>
