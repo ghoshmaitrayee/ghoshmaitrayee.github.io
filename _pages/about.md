@@ -291,20 +291,22 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
 <div class="grant-cards">
 
   <div class="grant-card">
-    <h3>DOE Allocation Award (2025)</h3>
-    <div><strong>Hydrocarbon Chemistry under Planetary Conditions</strong></div>
-    <img src="/images/NERSC-logo.png" alt="NERSC logo" class="grant-logo">
-    <div>PI Allocation on NERSC</div>
-    <div><strong>1.5M CPU hours</strong> &bull; <strong>50K GPU hours</strong></div>
+    <h3>NERSC AY 2025 DOE Mission Science Allocation Award </h3>
+    <div><strong>Machine-learning based theoretical investigations of nickel and its mixtures at in terrestrial
+planetary core conditions</strong></div>
+    <img src="/images/awards/NERSC-logo.png" alt="NERSC logo" class="grant-logo">
+    <div>Principal Investigator</div>
+    <div><strong>20K CPU hours</strong> &bull; <strong>5K GPU hours</strong></div>
     <a href="https://www.nersc.gov" target="_blank">Learn more →</a>
   </div>
 
   <div class="grant-card">
-    <h3>DOE Allocation Award (2025)</h3>
-    <div><strong>Inertial Fusion Target Simulations</strong></div>
-    <img src="/images/NERSC-logo.png" alt="NERSC logo" class="grant-logo">
-    <div>PI Allocation on NERSC</div>
-    <div><strong>2M CPU hours</strong> &bull; <strong>100K GPU hours</strong></div>
+    <h3>NERSC AY 2025 DOE Mission Science Allocation Award</h3>
+    <div><strong>Equation-of-state and conductivity calculations of foams using density-functional theory and
+machine-learning in inertial fusion energy relevant conditions</strong></div>
+    <img src="/images/awards/NERSC-logo.png" alt="NERSC logo" class="grant-logo">
+    <div>Principal Investigator</div>
+    <div><strong>19K CPU hours</strong> &bull; <strong>4K GPU hours</strong></div>
     <a href="https://www.nersc.gov" target="_blank">Learn more →</a>
   </div>
 
