@@ -267,7 +267,7 @@ issues remain for mobile version:
 
 -->
 
-<!-- 3rd version of style -->
+<!-- 3rd version of style 
 
 <style>
 /* Default (Light Theme) */
@@ -311,7 +311,7 @@ issues remain for mobile version:
     color: #e0e0e0 !important;
   }
 }
-</style>
+</style> -->
 
 
 
