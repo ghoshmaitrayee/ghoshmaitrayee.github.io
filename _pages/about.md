@@ -188,7 +188,6 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
   gap: 30px;
   padding: 10px;
   font-size: 1rem;
-  color: #000; /* force black text */
 }
 
 .experience-item {
