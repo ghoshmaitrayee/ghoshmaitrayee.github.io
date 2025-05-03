@@ -177,95 +177,7 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
 ---
 
 ## Work Experience
-<!-- 1st style 
-<style>
-.experience-block {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 15px;
-  margin-top: 20px;
-}
 
-.experience-item {
-  width: 200px;
-}
-
-.experience-item img {
-  width: 70px;
-  height: auto;
-  margin: 5px;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
-  border-radius: 10px;
-  transition: transform 0.2s ease;
-}
-
-.experience-item img:hover {
-  transform: scale(1.05);
-}
-
-.experience-item .title {
-  font-weight: bold;
-}
-
-@media (prefers-color-scheme: dark) {
-  .experience-item {
-    color: #e0e0e0;
-  }
-}
-</style>
-
--->
-
-<!-- 2nd style: gives black for both themes, 
-issues remain for mobile version:
-
-<style>
-.experience-block {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 15px;
-  margin-top: 20px;
-  color: #000; /* Default: black for light theme */
-}
-
-.experience-item {
-  width: 200px;
-}
-
-.experience-item img {
-  width: 70px;
-  height: auto;
-  margin: 5px;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
-  border-radius: 10px;
-  transition: transform 0.2s ease;
-}
-
-.experience-item img:hover {
-  transform: scale(1.05);
-}
-
-.experience-item .title {
-  font-weight: bold;
-}
-
-/* Explicitly set white text in dark mode */
-@media (prefers-color-scheme: dark) {
-  .experience-block {
-    color: #e0e0e0;
-  }
-}
-</style> -->
-
-<!-- 3rd version of style -->
 
 <style>
 /* Default (Light Theme) */
@@ -303,14 +215,7 @@ issues remain for mobile version:
   margin-bottom: 5px;
 }
 
-<!-- Commenting out dark mode  
-/* Dark mode override (this works on GitHub Pages) */
-@media (prefers-color-scheme: dark) {
-  body .experience-block {
-    color: #e0e0e0 !important;
-  }
-}
-</style> -->
+</style>
 
 
 
