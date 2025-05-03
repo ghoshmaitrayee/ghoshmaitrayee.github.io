@@ -170,69 +170,6 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
 .awards-section {
   text-align: center;
   font-size: 20px;
-  margin-top: 30px;
-}
-
-.awards-section h2 {
-  font-family: serif;
-  color: #aaa;
-  margin-bottom: 30px;
-}
-
-.awards-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: flex-start;
-  justify-content: center;
-  max-width: 700px;
-  margin: auto;
-}
-
-.award-entry {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 18px;
-  color: inherit;
-}
-
-.award-entry img {
-  width: 40px;
-  height: auto;
-}
-
-</style>
-
-<div class="awards-section">
-  <h2>Awards</h2>
-
-  <div class="awards-list">
-    <div class="award-entry">
-      <img src="/images/awards/laurel-1.png" alt="Laurel icon">
-      <div>IBM Zerner Graduate Student Award (2020)</div>
-    </div>
-    <div class="award-entry">
-      <img src="/images/awards/laurel-yellow.png" alt="Laurel icon">
-      <div>Frank J. J. Horton Research Fellowship (2018–2023)</div>
-    </div>
-    <div class="award-entry">
-      <img src="/images/awards/laurel-1.png" alt="Laurel icon">
-      <div>Sherman-Clarke Fellowship (2017)</div>
-    </div>
-    <div class="award-entry">
-      <img src="/images/awards/laurel-yellow.png" alt="Laurel icon">
-      <div>DST-INSPIRE Scholarship for Higher Education (2011–2016)</div>
-    </div>
-  </div>
-</div>
-
---- 
-
-<style>
-.awards-section {
-  text-align: center;
-  font-size: 20px;
   color: #fff;
   margin-top: 30px;
 }
