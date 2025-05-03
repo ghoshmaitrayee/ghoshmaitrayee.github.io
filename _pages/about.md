@@ -267,7 +267,7 @@ issues remain for mobile version:
 
 -->
 
-<!-- 3rd version of style 
+<!-- 3rd version of style -->
 
 <style>
 /* Default (Light Theme) */
@@ -305,6 +305,7 @@ issues remain for mobile version:
   margin-bottom: 5px;
 }
 
+<!-- Commenting out dark mode  
 /* Dark mode override (this works on GitHub Pages) */
 @media (prefers-color-scheme: dark) {
   body .experience-block {
