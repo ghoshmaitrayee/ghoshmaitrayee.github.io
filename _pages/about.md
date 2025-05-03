@@ -334,7 +334,6 @@ machine learning in inertial fusion energy relevant conditions</strong></div>
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   font-style: italic;
-  color: #e0e0e0;
   text-align: center;
   line-height: 1.7;
   position: relative;
@@ -344,7 +343,6 @@ machine learning in inertial fusion energy relevant conditions</strong></div>
 .quote-block::before,
 .quote-block::after {
   font-size: 80px;
-  color: #888;
   font-family: 'Playfair Display', serif;
   position: absolute;
   opacity: 0.4;
