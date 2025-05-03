@@ -220,7 +220,8 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
 
 -->
 
-<!-- 2nd style -->
+<!-- 2nd style: gives black for both themes, 
+issues remain for mobile version:
 
 <style>
 .experience-block {
@@ -264,6 +265,55 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
 }
 </style>
 
+-->
+
+<!-- 3rd version of style -->
+
+<style>
+/* Default (Light Theme) */
+.experience-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #000; /* force black text */
+}
+
+.experience-item {
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.experience-item img {
+  width: 60px;
+  height: auto;
+  margin: 4px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.experience-item img:hover {
+  transform: scale(1.05);
+}
+
+.experience-item .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Dark mode override (this works on GitHub Pages) */
+@media (prefers-color-scheme: dark) {
+  body .experience-block {
+    color: #e0e0e0 !important;
+  }
+}
+</style>
+
+
 
 <div class="experience-block">
 
@@ -299,7 +349,7 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
   <div class="experience-item">
     <div class="title">Junior Research Fellow (Intern)</div>
     <div>Indian Association for the Cultivation of Science<br/>2016-2017</div>
-    <a href="https://www.iacs.ac.in" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.iacs.res.in" target="_blank" rel="noopener noreferrer">
       <img src="/images/IACS_logo.png" alt="IACS Logo">
     </a>
   </div>
