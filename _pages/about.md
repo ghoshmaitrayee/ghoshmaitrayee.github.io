@@ -321,10 +321,48 @@ machine learning in inertial fusion energy relevant conditions</strong></div>
   </div>
 
 </div>
+
 ---
 
-<hr>
-<p style="text-align: center; font-style: italic; font-size: 16px; margin-top: 40px;">
-  “Science, like poetry, asks us to listen to the universe — not just measure.”
-</p>
+<!-- Google Fonts import -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
 
+<style>
+.quote-block {
+  max-width: 700px;
+  margin: 60px auto;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: #e0e0e0;
+  text-align: center;
+  line-height: 1.7;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.quote-block::before,
+.quote-block::after {
+  font-size: 80px;
+  color: #888;
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  opacity: 0.4;
+}
+
+.quote-block::before {
+  content: "“";
+  top: -20px;
+  left: -15px;
+}
+
+.quote-block::after {
+  content: "”";
+  bottom: -20px;
+  right: -15px;
+}
+</style>
+
+<div class="quote-block">
+  Science, like poetry, asks us to listen to the pulse of the universe — not just measure.
+</div>
