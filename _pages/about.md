@@ -34,7 +34,6 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
   text-align: center;
   font-size: 16px;
   line-height: 1.4;
-  color: #111; /* Default: black text */
 }
 
 .edu-item {
@@ -52,12 +51,6 @@ Beyond science, I enjoy exploring the intersections of chemistry and storytellin
 
 .edu-item img:hover {
   transform: scale(1.05);
-}
-
-@media (prefers-color-scheme: dark) {
-  .edu-block {
-    color: #e0e0e0 !important; /* Light text for dark theme */
-  }
 }
 </style>
 
