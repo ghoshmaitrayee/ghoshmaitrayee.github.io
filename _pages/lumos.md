@@ -31,7 +31,6 @@ author_profile: true
   max-width: 800px;
   margin: 60px auto 40px auto;
   font-family: 'Playfair Display', serif;
-  color: #e0e0e0;
   text-align: center;
   position: relative;
 }
@@ -47,7 +46,6 @@ author_profile: true
 .lumos-title::before,
 .lumos-title::after {
   font-size: 100px;
-  color: #888;
   font-family: 'Playfair Display', serif;
   position: absolute;
   opacity: 0.4;
@@ -79,7 +77,6 @@ author_profile: true
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 18px;
-  color: #e0e0e0;
   margin-top: 20px;
   margin-bottom: 30px;
   padding-left: 20px;
@@ -105,7 +102,6 @@ author_profile: true
 
 .photo-block p {
   font-size: 14px;
-  color: #aaa;
   margin-top: 10px;
 }
 </style>
