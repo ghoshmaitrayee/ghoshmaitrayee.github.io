@@ -1,5 +1,5 @@
 ---
-title: "Lumos"
+#title: "Lumos"
 permalink: /lumos/
 layout: single
 author_profile: true
