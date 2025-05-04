@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ---
 
-## 5K Finish (Spring 2024)
+# 5K Finish (Spring 2024)
 
 <div class="fivek-flex">
   <img src="/images/lumos/Lilac_Run_5K.jpg" alt="5K finish" class="fivek-img">
@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 --- 
 
-##  Digital Art
+#  Digital Art
 
 <div class="art-gallery">
   <div class="art-card">
