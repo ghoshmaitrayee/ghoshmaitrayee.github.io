@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <div class="poem-img-block">
   <a href="/images/lumos/IMG_6776.jpeg" class="glightbox" data-title="Poem 2">
-    <img src="/images/lumos/IMG_6779.jepg" alt="Poem 2">
+    <img src="/images/lumos/IMG_6776.jepg" alt="Poem 2">
   </a>
   <div class="caption-row">
     <span>পৃথিবীর গভীর গভীরে</span>
@@ -196,8 +196,8 @@ document.addEventListener("DOMContentLoaded", function() {
 ## 🎨 Digital Art
 
 <div class="art-gallery">
-  <a href="/images/lumos/Warli-art-1.jpg" class="glightbox"><img src="/images/lumos/art1.jpg" alt="Art 1"></a>
-  <a href="/images/lumos/Warli-art-2.jpg" class="glightbox"><img src="/images/lumos/art2.jpg" alt="Art 2"></a>
+  <a href="/images/lumos/Warli-art-1.jpg" class="glightbox"><img src="/images/lumos/Warli-art-1.jpg" alt="Art 1"></a>
+  <a href="/images/lumos/Warli-art-2.jpg" class="glightbox"><img src="/images/lumos/Warli-art-2.jpg" alt="Art 2"></a>
 </div>
 
 </div>
