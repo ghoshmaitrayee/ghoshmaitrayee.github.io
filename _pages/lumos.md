@@ -88,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function() {
 .caption-row {
   margin-top: 8px;
   font-size: 14px;
-  color: #aaa;
   font-style: italic;
   line-height: 1.4;
 }
@@ -134,7 +133,6 @@ document.addEventListener("DOMContentLoaded", function() {
 .art-caption {
   margin-top: 6px;
   font-size: 14px;
-  color: #777;
   font-style: italic;
   transition: opacity 0.3s ease;
 }
@@ -143,7 +141,6 @@ document.addEventListener("DOMContentLoaded", function() {
   display: block;
   font-family: 'Noto Serif Bengali', serif;
   font-style: normal;
-  color: #555;
   font-size: 13px;
   margin-top: 4px;
   opacity: 0;
@@ -162,7 +159,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <div class="lumos-section fade-in">
 
-## ✍️ Selected Poems
+---
+
+## Selected Poems
 
 <div class="poetry-grid">
   <div class="poem-img-block">
@@ -216,7 +215,9 @@ document.addEventListener("DOMContentLoaded", function() {
   But like pressure in the mantle.”
 </div>
 
-## 🏃 5K Finish (Spring 2024)
+---
+
+## 5K Finish (Spring 2024)
 
 <div class="fivek-flex">
   <img src="/images/lumos/Lilac_Run_5K.jpg" alt="5K finish" class="fivek-img">
@@ -226,7 +227,9 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 </div>
 
-## 🎨 Digital Art
+--- 
+
+##  Digital Art
 
 <div class="art-gallery">
   <div class="art-card">
