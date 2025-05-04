@@ -11,21 +11,7 @@ author_profile: true
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const lightbox = GLightbox({ selector: '.glightbox' });
-
-  const poems = [
-    `“The atom splits, the sky remembers —<br>What we break, we also become.”`,
-    `“Time folds not like pages,<br>But like pressure in the mantle.”`,
-    `“আমার ভিতরে আরেক আমি,<br>সেই আমি শুধু কবিতা লেখে।”`,
-    `“Across the event horizon of thought,<br>Language becomes gravity.”`
-  ];
-
-  const featured = document.getElementById("featured-poem");
-  if (featured) {
-    const week = Math.floor(new Date().getTime() / (1000 * 60 * 60 * 24 * 7));
-    const index = week % poems.length;
-    featured.innerHTML = poems[index];
-  }
+  GLightbox({ selector: '.glightbox' });
 });
 </script>
 
@@ -66,16 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
   padding-top: 10px;
   font-size: 16px;
   line-height: 1.7;
-}
-
-#featured-poem {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 20px;
-  margin: 40px 0;
-  padding: 20px;
-  border-left: 4px solid #ccc;
-  color: #444;
 }
 
 .poem-block {
@@ -141,14 +117,40 @@ document.addEventListener("DOMContentLoaded", function() {
   gap: 25px;
   margin-top: 20px;
 }
-.art-gallery img {
-  width: 220px;
+.art-card {
+  text-align: center;
+  max-width: 220px;
+  position: relative;
+}
+.art-card img {
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
-.art-gallery img:hover {
+.art-card img:hover {
   transform: scale(1.05);
+}
+.art-caption {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+  transition: opacity 0.3s ease;
+}
+.art-caption::after {
+  content: attr(data-bn);
+  display: block;
+  font-family: 'Noto Serif Bengali', serif;
+  font-style: normal;
+  color: #555;
+  font-size: 13px;
+  margin-top: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.art-card:hover .art-caption::after {
+  opacity: 1;
 }
 </style>
 
@@ -160,15 +162,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <div class="lumos-section fade-in">
 
-## 🌟 Featured Poem of the Week
-<div id="featured-poem"></div>
-
 ## ✍️ Selected Poems
 
 <div class="poetry-grid">
   <div class="poem-img-block">
-    <a href="/images/lumos/IMG_6776.jpeg" class="glightbox" data-title="Poem 1">
-      <img src="/images/lumos/IMG_6776.jpeg" alt="Poem 1">
+    <a href="/images/lumos/poem1.jpg" class="glightbox" data-title="Poem 1">
+      <img src="/images/lumos/poem1.jpg" alt="Poem 1">
     </a>
     <div class="caption-row">
       <span>অন্ধকারে আলো ফোটে</span>
@@ -177,34 +176,32 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 
   <div class="poem-img-block">
-    <a href="/images/lumos/poem-1.jpg" class="glightbox" data-title="Poem 2">
-      <img src="/images/lumos/poem-1.jpg" alt="Poem 2">
+    <a href="/images/lumos/poem2.jpg" class="glightbox" data-title="Poem 2">
+      <img src="/images/lumos/poem2.jpg" alt="Poem 2">
     </a>
     <div class="caption-row">
       <span>পৃথিবীর গভীর গভীরে</span>
       <span>— Deep in the heart of the Earth</span>
     </div>
   </div>
-</div>
 
-<div class="poem-img-block">
-    <a href="/images/lumos/poem-2.jpg" class="glightbox" data-title="Poem 3">
-      <img src="/images/lumos/poem-2.jpg" alt="Poem 3">
+  <div class="poem-img-block">
+    <a href="/images/lumos/poem3.jpg" class="glightbox" data-title="Poem 3">
+      <img src="/images/lumos/poem3.jpg" alt="Poem 3">
     </a>
     <div class="caption-row">
-      <span>পৃথিবীর গভীর গভীরে</span>
-      <span>— Deep in the heart of the Earth</span>
+      <span>সময়ের নদীতে ভাসি</span>
+      <span>— Floating on the river of time</span>
     </div>
   </div>
-</div>
 
-<div class="poem-img-block">
-    <a href="/images/lumos/poem-3.jpg" class="glightbox" data-title="Poem 4">
-      <img src="/images/lumos/poem-3.jpg" alt="Poem 4">
+  <div class="poem-img-block">
+    <a href="/images/lumos/IMG_6776.jpeg" class="glightbox" data-title="Poem 4">
+      <img src="/images/lumos/IMG_6776.jpeg" alt="Poem 4">
     </a>
     <div class="caption-row">
-      <span>পৃথিবীর গভীর গভীরে</span>
-      <span>— Deep in the heart of the Earth</span>
+      <span>শব্দেরা রক্তে মেশে</span>
+      <span>— Words dissolve into blood</span>
     </div>
   </div>
 </div>
@@ -232,8 +229,18 @@ document.addEventListener("DOMContentLoaded", function() {
 ## 🎨 Digital Art
 
 <div class="art-gallery">
-  <a href="/images/lumos/Warli-art-1.jpg" class="glightbox"><img src="/images/lumos/Warli-art-1.jpg" alt="Art 1"></a>
-  <a href="/images/lumos/Warli-art-2.jpg" class="glightbox"><img src="/images/lumos/Warli-art-2.jpg" alt="Art 2"></a>
+  <div class="art-card">
+    <a href="/images/lumos/Warli-art-1.jpg" class="glightbox">
+      <img src="/images/lumos/Warli-art-1.jpg" alt="Warli Art 1">
+    </a>
+    <div class="art-caption" data-bn="ওয়ারলি শিল্পে বৃত্তের গল্প">Warli-inspired scene — a story in circles</div>
+  </div>
+  <div class="art-card">
+    <a href="/images/lumos/Warli-art-2.jpg" class="glightbox">
+      <img src="/images/lumos/Warli-art-2.jpg" alt="Warli Art 2">
+    </a>
+    <div class="art-caption" data-bn="কৃষি ও ঘরের উপজাতি সুর">Harvest and home in tribal rhythm</div>
+  </div>
 </div>
 
 </div>
