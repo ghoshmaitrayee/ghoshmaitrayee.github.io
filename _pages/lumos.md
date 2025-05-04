@@ -54,6 +54,26 @@ document.addEventListener("DOMContentLoaded", function() {
   line-height: 1.7;
 }
 
+.lumos-section h2 {
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.lumos-section h2::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #aaa;
+}
+
 .poem-block {
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -88,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
 .caption-row {
   margin-top: 8px;
   font-size: 14px;
+  color: #aaa;
   font-style: italic;
   line-height: 1.4;
 }
@@ -133,6 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
 .art-caption {
   margin-top: 6px;
   font-size: 14px;
+  color: #777;
   font-style: italic;
   transition: opacity 0.3s ease;
 }
@@ -141,6 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
   display: block;
   font-family: 'Noto Serif Bengali', serif;
   font-style: normal;
+  color: #555;
   font-size: 13px;
   margin-top: 4px;
   opacity: 0;
