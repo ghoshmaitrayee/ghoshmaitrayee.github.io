@@ -166,8 +166,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <div class="poetry-grid">
   <div class="poem-img-block">
-    <a href="/images/lumos/poem1.jpg" class="glightbox" data-title="Poem 1">
-      <img src="/images/lumos/poem1.jpg" alt="Poem 1">
+    <a href="/images/lumos/poem-1.jpg" class="glightbox" data-title="Poem 1">
+      <img src="/images/lumos/poem-1.jpg" alt="Poem 1">
     </a>
     <div class="caption-row">
       <span>অন্ধকারে আলো ফোটে</span>
@@ -176,8 +176,8 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 
   <div class="poem-img-block">
-    <a href="/images/lumos/poem2.jpg" class="glightbox" data-title="Poem 2">
-      <img src="/images/lumos/poem2.jpg" alt="Poem 2">
+    <a href="/images/lumos/poem-2.jpg" class="glightbox" data-title="Poem 2">
+      <img src="/images/lumos/poem-2.jpg" alt="Poem 2">
     </a>
     <div class="caption-row">
       <span>পৃথিবীর গভীর গভীরে</span>
@@ -186,8 +186,8 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 
   <div class="poem-img-block">
-    <a href="/images/lumos/poem3.jpg" class="glightbox" data-title="Poem 3">
-      <img src="/images/lumos/poem3.jpg" alt="Poem 3">
+    <a href="/images/lumos/poem-3.jpg" class="glightbox" data-title="Poem 3">
+      <img src="/images/lumos/poem-3.jpg" alt="Poem 3">
     </a>
     <div class="caption-row">
       <span>সময়ের নদীতে ভাসি</span>
