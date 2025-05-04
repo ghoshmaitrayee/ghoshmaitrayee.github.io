@@ -12,6 +12,20 @@ author_profile: true
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const lightbox = GLightbox({ selector: '.glightbox' });
+
+  const poems = [
+    `“The atom splits, the sky remembers —<br>What we break, we also become.”`,
+    `“Time folds not like pages,<br>But like pressure in the mantle.”`,
+    `“আমার ভিতরে আরেক আমি,<br>সেই আমি শুধু কবিতা লেখে।”`,
+    `“Across the event horizon of thought,<br>Language becomes gravity.”`
+  ];
+
+  const featured = document.getElementById("featured-poem");
+  if (featured) {
+    const week = Math.floor(new Date().getTime() / (1000 * 60 * 60 * 24 * 7));
+    const index = week % poems.length;
+    featured.innerHTML = poems[index];
+  }
 });
 </script>
 
@@ -54,6 +68,16 @@ document.addEventListener("DOMContentLoaded", function() {
   line-height: 1.7;
 }
 
+#featured-poem {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 20px;
+  margin: 40px 0;
+  padding: 20px;
+  border-left: 4px solid #ccc;
+  color: #444;
+}
+
 .poem-block {
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -64,12 +88,20 @@ document.addEventListener("DOMContentLoaded", function() {
   border-left: 3px solid #999;
 }
 
+.poetry-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
 .poem-img-block {
+  width: 180px;
   text-align: center;
-  margin: 30px 0;
 }
 .poem-img-block img {
-  width: 180px;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
@@ -77,30 +109,27 @@ document.addEventListener("DOMContentLoaded", function() {
 .poem-img-block img:hover {
   transform: scale(1.03);
 }
-
 .caption-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  margin-top: 8px;
   font-size: 14px;
   color: #aaa;
-  margin-top: 8px;
   font-style: italic;
-  flex-wrap: wrap;
+  line-height: 1.4;
 }
 .caption-row span:first-child {
+  display: block;
   font-family: 'Noto Serif Bengali', serif;
 }
 
 .fivek-flex {
-  display: flex;
+  display: grid;
+  grid-template-columns: 200px 1fr;
   align-items: center;
   gap: 20px;
   margin-top: 50px;
-  flex-wrap: wrap;
 }
 .fivek-img {
-  width: 200px;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
@@ -131,45 +160,52 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <div class="lumos-section fade-in">
 
+## 🌟 Featured Poem of the Week
+<div id="featured-poem"></div>
+
 ## ✍️ Selected Poems
 
-<div class="poem-img-block">
-  <a href="/images/lumos/poem-1.jpg" class="glightbox" data-title="Poem 1">
-    <img src="/images/lumos/poem-1.jpg" alt="Poem 1">
-  </a>
-  <div class="caption-row">
-    <span>অন্ধকারে আলো ফোটে</span>
-    <span>— Light blossoms in darkness</span>
+<div class="poetry-grid">
+  <div class="poem-img-block">
+    <a href="/images/lumos/IMG_6776.jpeg" class="glightbox" data-title="Poem 1">
+      <img src="/images/lumos/IMG_6776.jpeg" alt="Poem 1">
+    </a>
+    <div class="caption-row">
+      <span>অন্ধকারে আলো ফোটে</span>
+      <span>— Light blossoms in darkness</span>
+    </div>
+  </div>
+
+  <div class="poem-img-block">
+    <a href="/images/lumos/poem-1.jpg" class="glightbox" data-title="Poem 2">
+      <img src="/images/lumos/poem-1.jpg" alt="Poem 2">
+    </a>
+    <div class="caption-row">
+      <span>পৃথিবীর গভীর গভীরে</span>
+      <span>— Deep in the heart of the Earth</span>
+    </div>
   </div>
 </div>
 
 <div class="poem-img-block">
-  <a href="/images/lumos/poem-2.jpg" class="glightbox" data-title="Poem 2">
-    <img src="/images/lumos/poem-2.jpg" alt="Poem 2">
-  </a>
-  <div class="caption-row">
-    <span>পৃথিবীর গভীর গভীরে</span>
-    <span>— Deep in the heart of the Earth</span>
+    <a href="/images/lumos/poem-2.jpg" class="glightbox" data-title="Poem 3">
+      <img src="/images/lumos/poem-2.jpg" alt="Poem 3">
+    </a>
+    <div class="caption-row">
+      <span>পৃথিবীর গভীর গভীরে</span>
+      <span>— Deep in the heart of the Earth</span>
+    </div>
   </div>
 </div>
 
 <div class="poem-img-block">
-  <a href="/images/lumos/poem-3.jpg" class="glightbox" data-title="Poem 2">
-    <img src="/images/lumos/poem-3.jpg" alt="Poem 2">
-  </a>
-  <div class="caption-row">
-    <span>পৃথিবীর গভীর গভীরে</span>
-    <span>— Deep in the heart of the Earth</span>
-  </div>
-</div>
-
-<div class="poem-img-block">
-  <a href="/images/lumos/IMG_6776.jpeg" class="glightbox" data-title="Poem 2">
-    <img src="/images/lumos/IMG_6776.jepg" alt="Poem 2">
-  </a>
-  <div class="caption-row">
-    <span>পৃথিবীর গভীর গভীরে</span>
-    <span>— Deep in the heart of the Earth</span>
+    <a href="/images/lumos/poem-3.jpg" class="glightbox" data-title="Poem 4">
+      <img src="/images/lumos/poem-3.jpg" alt="Poem 4">
+    </a>
+    <div class="caption-row">
+      <span>পৃথিবীর গভীর গভীরে</span>
+      <span>— Deep in the heart of the Earth</span>
+    </div>
   </div>
 </div>
 
