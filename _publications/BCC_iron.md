@@ -16,4 +16,21 @@ paperurl: 'https://doi.org/10.1088/1361-648X/acba71'
 citation: 'Ghosh, M., Zhang, S., Hu, L., & Hu, S. X. (2023). “Cooperative diffusion in body‑centered cubic iron in Earth and super‑Earths’ inner core conditions.” *J. Phys.: Condens. Matter.*, 35(15), 15pp.'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+## 🔑 Key Points from the Paper
+
+- **Study Focus**: Investigates atomic diffusion in **body-centered cubic (bcc) iron** under extreme **inner core conditions** — pressures of ~330–4000 GPa and temperatures ~2000–4000 K below melting.
+
+- **Main Finding**: Bcc iron exhibits **cooperative atomic diffusion** along the ⟨111⟩ crystallographic directions, even while remaining mechanically and dynamically stable.
+
+- **Mechanism**: Diffusion occurs via **string-like collective motion** of atoms, enabled by **low energy barriers** and thermal excitation.
+
+- **Significance**:
+  - Explains the **coexistence of high seismic velocity and high attenuation** observed in Earth’s inner core.
+  - Suggests **elevated electrical and thermal conductivity** in bcc iron at core conditions.
+  - Implies **low viscosity**, which could impact **inner-core dynamics**, **solid-state convection**, and **magnetic field generation**.
+
+- **Planetary Implications**:
+  - Bcc iron may be the dominant phase in **super-Earth cores**, where even higher pressures prevail.
+  - These findings should be incorporated into **geodynamo models** and simulations of **planetary evolution**.
+
+- **Methods Used**: Large-scale **first-principles molecular dynamics simulations** based on **density functional theory (DFT)**, analyzing both atomic trajectories and elastic properties, supported with **machine-learning simulations**.
