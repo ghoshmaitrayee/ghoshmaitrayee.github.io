@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/bcc‑Fe‑metastability
 excerpt: |
   - Investigates the **bcc, hcp, and fcc phases of iron** at **multi-megabar pressures** and **elevated electron temperatures (≥1–1.5 eV)** relevant to Earth's inner core and high-pressure science.
-  - First-principles calculations reveal a **significant drop and plateau in the potential energy surface**, stabilizing the bcc phase via enhanced **phonon-mode stabilization** and **vibrational entropy** :contentReference[oaicite:1]{index=1}.
+  - First-principles calculations reveal a **significant drop and plateau in the potential energy surface**, stabilizing the bcc phase via enhanced **phonon-mode stabilization** and **vibrational entropy**.
   - Demonstrates **thermal-induced structural competitiveness**, where bcc iron becomes metastable under non‑equilibrium high-temperature conditions.
   - Provides a clear theoretical framework for interpreting **iron phase relations and solidification processes** in high‑pressure experiments and planetary cores.
   - *Author contribution: Ghosh contributed to DFT calculations analyzing structural stabilization of bcc iron at high electronic temperatures.*
