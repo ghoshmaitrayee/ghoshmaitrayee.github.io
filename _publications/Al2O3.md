@@ -3,8 +3,15 @@ title: "Melting and transport properties of Al₂O₃ at extreme conditions"
 collection: publications
 category: manuscripts
 permalink: /publication/Al2O3
-excerpt: >
-  Based on extensive first‑principles molecular‑dynamics simulations at pressures of ~130–1300 GPa and temperatures of 4000–20 000 K, this study reveals that melting of Al₂O₃ induces an insulator‑to‑semimetal transition with significant enhancement of electrical (σ_dc) and thermal (κ) conductivity. The Rh₂O₃(II) → CaIrO₃ solid–solid transition at ~160 GPa has negligible transport‑property change, while the subsequent CaIrO₃ → U₂S₃ transition at ~450 GPa leads to marked increases in conductivity. Oxygen vacancies enhance transport, but MgSiO₃ solid solutions have minimal impact.
+excerpt: |
+  - Extensive first-principles molecular dynamics simulations were performed at ~130–1300 GPa and 4000–20 000 K.
+  - Melting of Al₂O₃ results in an insulator-to-semimetal transition, significantly enhancing:
+    - Electrical conductivity (σ_dc)
+    - Thermal conductivity (κ)
+  - The solid–solid transition from Rh₂O₃(II) to CaIrO₃ at ~160 GPa causes negligible changes in transport properties.
+  - The CaIrO₃ to U₂S₃ transition at ~450 GPa leads to marked increases in σ_dc and κ.
+  - Oxygen vacancies enhance conductivity and thermal transport.
+  - Forming solid solutions with MgSiO₃ has minimal effect, especially in the solid phase.
 date: 2024-11-08
 venue: "Physical Review B"
 slidesurl: ''
