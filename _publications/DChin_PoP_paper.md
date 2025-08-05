@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/ni-exafs-model
 excerpt: |
   - Presents a **parametrized ion-distribution model** tailored to interpret **EXAFS spectra** in **warm dense nickel (Ni) plasmas**, including conditions near ~100 GPa and high temperatures.
-  - Benchmarks the model against **DFT-MD simulations** for nickel, showing accurate agreement in ion structure factors and correlation lengths—critical for x-ray diagnostics in high-energy-density experiments :contentReference[oaicite:1]{index=1}.
+  - Benchmarks the model against **DFT-MD simulations** for nickel, showing accurate agreement in ion structure factors and correlation lengths—critical for x-ray diagnostics in high-energy-density experiments.
   - Demonstrates improved characterization of local ionic arrangements in Ni under extreme conditions, enabling more precise interpretation of experimental spectra.
   - Contributes to broader efforts in modeling warm dense matter where nickel is a proxy or component in astrophysical and inertial confinement fusion contexts.
   - *Author contribution: Performed DFT‑MD simulations for nickel to provide structural inputs used in model development.*
