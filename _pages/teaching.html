@@ -5,49 +5,319 @@ permalink: /teaching/
 author_profile: true
 ---
 
-<h2>Teaching</h2>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f8f9fb;
+    --surface-2: #ffffff;
+    --text: #1f2937;
+    --muted: #5b6472;
+    --border: #e5e7eb;
+    --accent: #2563eb;
+    --accent-soft: rgba(37, 99, 235, 0.08);
+    --shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    --radius: 18px;
+    --radius-sm: 12px;
+    --max-width: 980px;
+  }
 
-<p>
-My teaching and mentoring approach emphasizes clarity, scaffolded learning, and helping students
-transition from learning science to practicing science independently. My experience spans classroom
-teaching, curriculum design, and research mentoring across undergraduate and graduate levels.
-</p>
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a;
+      --surface: #111827;
+      --surface-2: #1a2233;
+      --text: #e5e7eb;
+      --muted: #a7b0c0;
+      --border: #263041;
+      --accent: #60a5fa;
+      --accent-soft: rgba(96, 165, 250, 0.12);
+      --shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+    }
+  }
 
-<h3>Teaching Experience</h3>
-<p>
-<strong>Graduate Teaching Assistant, General Chemistry</strong><br>
-Department of Chemistry, University of Rochester | Sep 2017 – May 2019
-</p>
-<ul>
-  <li>Led laboratory sections and pre-lab briefings.</li>
-  <li>Held office hours to support student learning.</li>
-  <li>Graded laboratory reports and exams in coordination with the instructor of record.</li>
-</ul>
+  .teaching-page {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 1rem 2rem;
+    color: var(--text);
+  }
 
-<h3>Course Design and Pedagogical Training</h3>
-<ul>
-  <li>Completed Tier 1 of the Stanford Postdoc Teaching &amp; Mentoring Certificate; Tier 2 in progress.</li>
-  <li>Completed DOE SULI Mentor Training at SLAC.</li>
-  <li>Pursuing CIRTL Teaching Certificate, including the IDEAL Pedagogy course and pedagogy journal clubs.</li>
-  <li>Designed a graduate-level syllabus on <em>High Energy Density Science</em>.</li>
-  <li>Developed materials for undergraduate <em>Introduction to Physical Chemistry</em>.</li>
-</ul>
+  .teaching-hero {
+    background: linear-gradient(180deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+  }
 
-<h3>Mentoring</h3>
-<ul>
-  <li>Mentoring a Stanford graduate student on phase transition mechanisms and conductivity calculations.</li>
-  <li>Mentored a DOE-SULI undergraduate intern at SLAC through a structured research plan, weekly meetings, and conference preparation.</li>
-  <li>Previously mentored undergraduate and high-school interns in computational chemistry and HPC workflows.</li>
-</ul>
+  .teaching-kicker {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    margin-bottom: 0.9rem;
+  }
 
-<h3>Teaching Interests</h3>
-<ul>
-  <li>General Chemistry</li>
-  <li>Physical Chemistry</li>
-  <li>Thermodynamics and Statistical Mechanics</li>
-  <li>Quantum Mechanics</li>
-  <li>Molecular Spectroscopy</li>
-  <li>Computational Chemistry</li>
-  <li>Materials Chemistry</li>
-  <li>High Energy Density Science</li>
-</ul>
+  .teaching-hero h1 {
+    margin: 0 0 0.6rem;
+    font-size: clamp(2rem, 3vw, 2.7rem);
+    line-height: 1.15;
+    color: var(--text);
+  }
+
+  .teaching-lead {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--muted);
+    max-width: 760px;
+  }
+
+  .teaching-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 860px) {
+    .teaching-grid {
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: start;
+    }
+  }
+
+  .teaching-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.4rem 1.3rem;
+  }
+
+  .teaching-card h2 {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    color: var(--text);
+  }
+
+  .teaching-card h3 {
+    margin: 1.25rem 0 0.55rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text);
+  }
+
+  .teaching-card p {
+    margin: 0.45rem 0 0.9rem;
+    line-height: 1.75;
+    color: var(--muted);
+  }
+
+  .teaching-list,
+  .teaching-compact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem 0 0;
+  }
+
+  .teaching-list li,
+  .teaching-compact-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+
+  .teaching-list li::before,
+  .teaching-compact-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72rem;
+    width: 0.38rem;
+    height: 0.38rem;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .teaching-list strong,
+  .teaching-compact-list strong,
+  .teaching-entry strong {
+    color: var(--text);
+  }
+
+  .teaching-pillbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 0.8rem;
+  }
+
+  .teaching-pill {
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text);
+    border-radius: 999px;
+    padding: 0.55rem 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .teaching-entry {
+    padding: 1rem 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .teaching-entry:first-of-type {
+    border-top: 0;
+    padding-top: 0.1rem;
+  }
+
+  .teaching-meta {
+    display: inline-block;
+    margin-top: 0.2rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .teaching-highlight {
+    border-left: 4px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 0.95rem 1rem;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    color: var(--text);
+    margin-top: 0.85rem;
+    line-height: 1.7;
+  }
+
+  .teaching-section-spacer {
+    margin-top: 1.1rem;
+  }
+
+  .teaching-small {
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+</style>
+
+<div class="teaching-page">
+
+  <section class="teaching-hero">
+    <div class="teaching-kicker">Teaching</div>
+    <h1>Building independent scientific thinkers</h1>
+    <p class="teaching-lead">
+      My teaching and mentoring emphasize conceptual rigor, structured learning, and research-integrated instruction.
+      I aim to help students move from learning scientific ideas to applying them independently with confidence,
+      curiosity, and technical depth.
+    </p>
+  </section>
+
+  <div class="teaching-grid">
+
+    <div class="teaching-card">
+      <h2>Teaching Philosophy</h2>
+
+      <ul class="teaching-list">
+        <li><strong>First-principles thinking:</strong> I emphasize deep conceptual understanding over memorization, especially in thermodynamics, quantum mechanics, and statistical mechanics.</li>
+        <li><strong>Scaffolded learning:</strong> I guide students from structured examples toward independent reasoning and open-ended problem solving.</li>
+        <li><strong>Active learning:</strong> I value workshop-style sessions, guided discussions, and collaborative problem solving to improve engagement and retention.</li>
+        <li><strong>Inclusive pedagogy:</strong> I support students from diverse backgrounds by setting clear expectations, providing accessible resources, and creating multiple pathways for participation.</li>
+        <li><strong>Assessment for growth:</strong> I use transparent rubrics and timely feedback so that assessment reinforces learning rather than simply measuring performance.</li>
+        <li><strong>Research integration:</strong> I connect classroom ideas to real scientific questions in physical chemistry, materials under extreme conditions, and planetary science.</li>
+        <li><strong>Mentoring toward independence:</strong> I view mentoring as an extension of teaching, beginning with structure and gradually fostering ownership, confidence, and scientific judgment.</li>
+      </ul>
+
+      <div class="teaching-highlight">
+        <strong>Teaching focus:</strong> From structured learning to independent scientific practice.
+      </div>
+
+      <div class="teaching-section-spacer"></div>
+
+      <h2>Teaching Experience</h2>
+
+      <div class="teaching-entry">
+        <strong>Graduate Teaching Assistant, General Chemistry</strong><br>
+        <span class="teaching-meta">University of Rochester · 2017–2019</span>
+        <ul class="teaching-compact-list">
+          <li>Led laboratory sections and delivered pre-lab instruction.</li>
+          <li>Held office hours to support student learning and problem-solving.</li>
+          <li>Graded laboratory reports and exams in coordination with course instructors.</li>
+        </ul>
+      </div>
+
+      <h2>Mentoring</h2>
+
+      <div class="teaching-entry">
+        <strong>Graduate Mentor, SLAC</strong><br>
+        <span class="teaching-meta">2025–Present</span>
+        <p>Mentoring a Stanford graduate student on phase transition mechanisms and conductivity calculations in the High Energy Density Sciences Division.</p>
+      </div>
+
+      <div class="teaching-entry">
+        <strong>Undergraduate Mentor, DOE SULI, SLAC</strong><br>
+        <span class="teaching-meta">2025</span>
+        <p>
+          Mentored an undergraduate intern through structured learning goals, weekly meetings,
+          guided readings, method walkthroughs, and poster preparation.
+        </p>
+        <p class="teaching-small"><strong>Outcome:</strong> Best Undergraduate Poster Award, SCCS 2025.</p>
+      </div>
+
+      <div class="teaching-entry">
+        <strong>Mentor, University of Rochester</strong><br>
+        <span class="teaching-meta">2019–2023</span>
+        <p>Mentored undergraduate and high-school students in computational chemistry and high-performance computing workflows.</p>
+      </div>
+    </div>
+
+    <div class="teaching-card">
+      <h2>Course Design and Training</h2>
+
+      <div class="teaching-entry">
+        <strong>Stanford Postdoc Teaching &amp; Mentoring Certificate</strong><br>
+        <span class="teaching-meta">Tier 1 completed · Tier 2 in progress</span>
+      </div>
+
+      <div class="teaching-entry">
+        <strong>DOE SULI Mentor Training</strong><br>
+        <span class="teaching-meta">SLAC</span>
+      </div>
+
+      <div class="teaching-entry">
+        <strong>CIRTL Teaching Certificate</strong><br>
+        <span class="teaching-meta">In progress</span>
+      </div>
+
+      <div class="teaching-entry">
+        <strong>Course Design</strong>
+        <ul class="teaching-compact-list">
+          <li>Designed a graduate-level course in <em>High Energy Density Science</em>.</li>
+          <li>Developed materials for <em>Introduction to Physical Chemistry</em>.</li>
+        </ul>
+      </div>
+
+      <h2>Courses I Can Teach</h2>
+      <div class="teaching-pillbox">
+        <span class="teaching-pill">General Chemistry</span>
+        <span class="teaching-pill">Physical Chemistry</span>
+        <span class="teaching-pill">Thermodynamics</span>
+        <span class="teaching-pill">Statistical Mechanics</span>
+        <span class="teaching-pill">Quantum Mechanics</span>
+        <span class="teaching-pill">Molecular Spectroscopy</span>
+        <span class="teaching-pill">Computational Chemistry</span>
+        <span class="teaching-pill">Materials Chemistry</span>
+        <span class="teaching-pill">Materials Under Extreme Conditions</span>
+        <span class="teaching-pill">High Energy Density Science</span>
+      </div>
+    </div>
+
+  </div>
+</div>
