@@ -1,0 +1,520 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+
+<style>
+  :root {
+    --pub-bg: #ffffff;
+    --pub-surface: #f8fafc;
+    --pub-text: #111827;
+    --pub-muted: #6b7280;
+    --pub-border: rgba(17, 24, 39, 0.08);
+    --pub-accent: #2563eb;
+    --pub-accent-soft: rgba(37, 99, 235, 0.08);
+    --pub-max: 980px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --pub-bg: #0b1220;
+      --pub-surface: #0f172a;
+      --pub-text: #e5e7eb;
+      --pub-muted: #9ca3af;
+      --pub-border: rgba(255, 255, 255, 0.08);
+      --pub-accent: #60a5fa;
+      --pub-accent-soft: rgba(96, 165, 250, 0.12);
+    }
+  }
+
+  .pub-page {
+    max-width: var(--pub-max);
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+    color: var(--pub-text);
+  }
+
+  .pub-hero {
+    margin-bottom: 2.5rem;
+  }
+
+  .pub-kicker {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--pub-accent);
+    margin-bottom: 0.7rem;
+  }
+
+  .pub-hero h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(2.1rem, 4vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .pub-lead {
+    margin: 0;
+    max-width: 760px;
+    color: var(--pub-muted);
+    font-size: 1.02rem;
+    line-height: 1.8;
+  }
+
+  .pub-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+    color: var(--pub-muted);
+    font-size: 0.95rem;
+  }
+
+  .pub-stats strong {
+    color: var(--pub-text);
+    font-weight: 700;
+  }
+
+  .pub-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin: 2rem 0 2.2rem;
+  }
+
+  .pub-chip {
+    border: 1px solid var(--pub-border);
+    background: transparent;
+    color: var(--pub-text);
+    border-radius: 999px;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.92rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  .pub-chip:hover,
+  .pub-chip.is-active {
+    color: var(--pub-accent);
+    border-color: rgba(37, 99, 235, 0.28);
+    background: var(--pub-accent-soft);
+  }
+
+  .pub-section {
+    margin-top: 2.4rem;
+  }
+
+  .pub-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .pub-section h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .pub-section-note {
+    color: var(--pub-muted);
+    font-size: 0.92rem;
+  }
+
+  .pub-subsection {
+    margin-top: 1.7rem;
+  }
+
+  .pub-subsection h3 {
+    margin: 0 0 0.9rem;
+    font-size: 0.98rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--pub-muted);
+  }
+
+  .pub-list {
+    display: grid;
+    gap: 0;
+  }
+
+  .pub-item {
+    padding: 1.1rem 0;
+    border-top: 1px solid var(--pub-border);
+    transition: 0.2s ease;
+  }
+
+  .pub-item:hover {
+    transform: translateX(4px);
+  }
+
+  .pub-item:first-child {
+    border-top: 1px solid var(--pub-border);
+  }
+
+  .pub-title {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+    font-weight: 500;
+    color: var(--pub-text);
+  }
+
+  .pub-title strong {
+    font-weight: 800;
+  }
+
+  .pub-meta {
+    margin-top: 0.35rem;
+    color: var(--pub-muted);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .pub-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .pub-main {
+    min-width: 0;
+  }
+
+  .pub-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  .pub-badge {
+    border-radius: 999px;
+    padding: 0.28rem 0.62rem;
+    font-size: 0.74rem;
+    font-weight: 700;
+    border: 1px solid var(--pub-border);
+    color: var(--pub-muted);
+    background: transparent;
+  }
+
+  .pub-badge.first-author {
+    color: #0f766e;
+    border-color: rgba(15, 118, 110, 0.2);
+    background: rgba(15, 118, 110, 0.08);
+  }
+
+  .pub-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.55rem;
+  }
+
+  .pub-link {
+    text-decoration: none;
+    font-size: 0.88rem;
+    color: var(--pub-muted);
+    transition: 0.2s ease;
+  }
+
+  .pub-link:hover {
+    color: var(--pub-accent);
+  }
+
+  .pub-hidden {
+    display: none !important;
+  }
+
+  .pub-featured {
+    margin-top: 3rem;
+    padding-top: 0.5rem;
+  }
+
+  .pub-featured-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  @media (min-width: 780px) {
+    .pub-featured-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .pub-featured-card {
+    border: 1px solid var(--pub-border);
+    background: var(--pub-surface);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.2s ease;
+  }
+
+  .pub-featured-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .pub-featured-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    background: rgba(127, 127, 127, 0.08);
+  }
+
+  .pub-featured-body {
+    padding: 1rem 1rem 1.1rem;
+  }
+
+  .pub-featured-title {
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .pub-featured-text {
+    margin: 0;
+    color: var(--pub-muted);
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 720px) {
+    .pub-row {
+      flex-direction: column;
+    }
+
+    .pub-badges {
+      margin-top: 0;
+    }
+  }
+</style>
+
+<div class="pub-page">
+  <section class="pub-hero">
+    <div class="pub-kicker">Research Output</div>
+    <h1>Publications</h1>
+    <p class="pub-lead">
+      My peer-reviewed publications focus on matter under extreme conditions, planetary interiors, inertial fusion energy, and materials chemistry. I am especially interested in how atomistic simulations reveal phase behavior, transport, and emergent properties in challenging thermodynamic regimes.
+    </p>
+    <div class="pub-stats">
+      <span><strong>11</strong> peer-reviewed publications</span>
+      <span><strong>9</strong> in extreme conditions</span>
+      <span><strong>2</strong> in materials chemistry</span>
+    </div>
+  </section>
+
+  <div class="pub-toolbar" aria-label="Publication filters">
+    <button class="pub-chip is-active" data-filter="all" type="button">All</button>
+    <button class="pub-chip" data-filter="extreme" type="button">Extreme conditions</button>
+    <button class="pub-chip" data-filter="materials" type="button">Materials chemistry</button>
+    <button class="pub-chip" data-filter="first-author" type="button">First author</button>
+  </div>
+
+  <section class="pub-section">
+    <div class="pub-section-header">
+      <h2>Peer-reviewed Publications</h2>
+      <div class="pub-section-note">Grouped by research area</div>
+    </div>
+
+    <div class="pub-subsection">
+      <h3>Matter Under Extreme Conditions</h3>
+      <div class="pub-list">
+
+        <article class="pub-item" data-tags="extreme">
+          <div class="pub-row">
+            <div class="pub-main">
+              <p class="pub-title">S. Zhang, A. Panjwani, P. Xiao, <strong>M. Ghosh</strong>, T. Ogitsu, Y. Ping, S. X. Hu, “Thermally induced structural competitiveness and metastability of body-centered-cubic iron under nonequilibrium conditions”</p>
+              <p class="pub-meta"><em>Physical Review B</em>, 111(22), 22410 (2025)</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-item" data-tags="extreme first-author">
+          <div class="pub-row">
+            <div class="pub-main">
+              <p class="pub-title"><strong>M. Ghosh</strong>, S. X. Hu, E. Blackman, S. Zhang, “Melting and transport properties of Al<sub>2</sub>O<sub>3</sub> at extreme conditions”</p>
+              <p class="pub-meta"><em>Physical Review B</em>, 110, 174107 (2024)</p>
+              <div class="pub-actions">
+                <a class="pub-link" href="https://doi.org/10.1103/PhysRevB.110.174107" target="_blank" rel="noopener">DOI</a>
+                <a class="pub-link" href="https://link.aps.org/doi/10.1103/PhysRevB.110.174107" target="_blank" rel="noopener">Journal</a>
+                <a class="pub-link" href="https://scholar.google.com/scholar?q=Melting+and+transport+properties+of+Al2O3+at+extreme+conditions" target="_blank" rel="noopener">Google Scholar</a>
+              </div>
+            </div>
+            <div class="pub-badges">
+              <span class="pub-badge first-author">First author</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-item" data-tags="extreme">
+          <div class="pub-row">
+            <div class="pub-main">
+              <p class="pub-title">D. A. Chin, P. M. Nilson, J. J. Ruby, G. Bunker, <strong>M. Ghosh</strong>, M. E. Signor, D. T. Bishel, E. A. Smith, F. Coppari, Y. Ping, J. R. Rygg, G. W. Collins, “Parametrized ion-distribution model for extended x-ray absorption fine-structure analysis at high-energy-density conditions”</p>
+              <p class="pub-meta"><em>Physics of Plasmas</em>, 31, 042708 (2024)</p>
+              <div class="pub-actions">
+                <a class="pub-link" href="https://doi.org/10.1063/5.0191549" target="_blank" rel="noopener">DOI</a>
+                <a class="pub-link" href="https://pubs.aip.org/aip/pop/article/31/4/042708/3283125/Parametrized-ion-distribution-model-for-extended-x" target="_blank" rel="noopener">Journal</a>
+                <a class="pub-link" href="https://scholar.google.com/scholar?q=Parametrized+ion-distribution+model+for+extended+x-ray+absorption+fine-structure+analysis+at+high-energy-density+conditions" target="_blank" rel="noopener">Google Scholar</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-item" data-tags="extreme">
+          <div class="pub-row">
+            <div class="pub-main">
+              <p class="pub-title">S. X. Hu, L. Ceurvorst, J. L. Peebles, A. Mao, P. Li, Y. Lu, A. Shvydky, V. N. Goncharov, R. Epstein, K. Nichols, R. M. N. Goshadze, <strong>M. Ghosh</strong>, J. Hinz, V. V. Karasiev, S. Zhang, N. R. Shaffer, D. I. Mihaylov, J. Cappelletti, D. R. Harding, C. K. Li, E. M. Campbell, R. C. Shah, T. J. B. Collins, S. P. Regan, C. Deeney, “Laser-Direct-Drive Fusion Target Design with a High-Z Gradient-Density Pusher Shell”</p>
+              <p class="pub-meta"><em>Physical Review E</em>, 108(3), 035209 (2023)</p>
+              <div class="pub-actions">
+                <a class="pub-link" href="https://doi.org/10.1103/PhysRevE.108.035209" target="_blank" rel="noopener">DOI</a>
+                <a class="pub-link" href="https://link.aps.org/doi/10.1103/PhysRevE.108.035209" target="_blank" rel="noopener">Journal</a>
+                <a class="pub-link" href="https://scholar.google.com/scholar?q=Laser-Direct-Drive+Fusion+Target+Design+with+a+High-Z+Gradient-Density+Pusher+Shell" target="_blank" rel="noopener">Google Scholar</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-item" data-tags="extreme first-author">
+          <div class="pub-row">
+            <div class="pub-main">
+              <p class="pub-title"><strong>M. Ghosh</strong>, S. Zhang, L. Hu, S. X. Hu, “Cooperative diffusion in body-centered iron in Earth and super-Earths’ inner core conditions”</p>
+              <p class="pub-meta"><em>Journal of Physics: Condensed Matter</em>, 35, 154002 (2023)</p>
+              <div class="pub-actions">
+                <a class="pub-link" href="https://doi.org/10.1088/1361-648X/acba71" target="_blank" rel="noopener">DOI</a>
+                <a class="pub-link" href="https://iopscience.iop.org/article/10.1088/1361-648X/acba71" target="_blank" rel="noopener">Journal</a>
+                <a class="pub-link" href="https://scholar.google.com/scholar?q=Cooperative+diffusion+in+body-centered+iron+in+Earth+and+super-Earths%27+inner+core+conditions" target="_blank" rel="noopener">Google Scholar</a>
+              </div>
+            </div>
+            <div class="pub-badges">
+              <span class="pub-badge first-author">First author</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-item" data-tags="extreme">
+          <div class="pub-row">
+            <div class="pub-main">
+              <p class="pub-title">S. Zhang, V. V. Karasiev, N. Shaffer, D. I. Mihaylov, K. Nichols, R. Paul, R. M. N. Goshadze, <strong>M. Ghosh</strong>, J. Hinz, R. Epstein, S. Goedecker, S. X. Hu, “A first-principles equation of state of CHON resin for inertial confinement fusion applications”</p>
+              <p class="pub-meta"><em>Physical Review E</em>, 106(4), 045207 (2022)</p>
+              <div class="pub-actions">
+                <a class="pub-link" href="https://doi.org/10.1103/PhysRevE.106.045207" target="_blank" rel="noopener">DOI</a>
+                <a class="pub-link" href="https://link.aps.org/doi/10.1103/PhysRevE.106.045207" target="_blank" rel="noopener">Journal</a>
+                <a class="pub-link" href="https://scholar.google.com/scholar?q=A+first-principles+equation+of+state+of+CHON+resin+for+inertial+confinement+fusion+applications" target="_blank" rel="noopener">Google Scholar</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-item" data-tags="extreme">
+          <div class="pub-row">
+            <div class="pub-main">
+              <p class="pub-title">S. Zhang and <strong>M. Ghosh</strong>, “BCC Iron Cannot Be Refuted at Earth and Super-Earth’s Inner-Core Conditions”</p>
+              <p class="pub-meta">eLetter to <em>Science</em> 375, 202 (2022) · 16 February 2022</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="pub-subsection">
+      <h3>Materials Chemistry</h3>
+      <div class="pub-list">
+
+        <article class="pub-item" data-tags="materials">
+          <div class="pub-row">
+            <div class="pub-main">
+              <p class="pub-title">K. Wang, B. Wacker, <strong>M. Ghosh</strong>, V. V. Karaseiv, S. X. Hu, J. Huang, Y. Gao, “Light-enhanced Oxygen degradation of MAPbBr<sub>3</sub> Single Crystal”</p>
+              <p class="pub-meta"><em>Physical Chemistry Chemical Physics</em>, 26, 5027–5037 (2024)</p>
+              <div class="pub-actions">
+                <a class="pub-link" href="https://doi.org/10.1039/D3CP03493C" target="_blank" rel="noopener">DOI</a>
+                <a class="pub-link" href="https://pubs.rsc.org/doi/d3cp03493c" target="_blank" rel="noopener">Journal</a>
+                <a class="pub-link" href="https://scholar.google.com/scholar?q=Light-enhanced+oxygen+degradation+of+MAPbBr3+single+crystal" target="_blank" rel="noopener">Google Scholar</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub-item" data-tags="materials first-author">
+          <div class="pub-row">
+            <div class="pub-main">
+              <p class="pub-title"><strong>M. Ghosh</strong> and A. Datta, “Pseudo Jahn-Teller Effect in silicene, germanene and stanene: a crystal orbital density coupling analysis”</p>
+              <p class="pub-meta"><em>Bulletin of Materials Science</em>, 41(5), 117 (2018)</p>
+              <div class="pub-actions">
+                <a class="pub-link" href="https://doi.org/10.1007/s12034-018-1634-y" target="_blank" rel="noopener">DOI</a>
+                <a class="pub-link" href="https://www.ias.ac.in/describe/article/boms/041/05/0117" target="_blank" rel="noopener">Journal</a>
+                <a class="pub-link" href="https://scholar.google.com/scholar?q=Pseudo+Jahn-Teller+Effect+in+silicene,+germanene+and+stanene+a+crystal+orbital+density+coupling+analysis" target="_blank" rel="noopener">Google Scholar</a>
+              </div>
+            </div>
+            <div class="pub-badges">
+              <span class="pub-badge first-author">First author</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="pub-featured">
+    <div class="pub-section-header">
+      <h2>Selected Research Highlights</h2>
+      <div class="pub-section-note">Add figures only for a few representative papers</div>
+    </div>
+
+    <div class="pub-featured-grid">
+      <article class="pub-featured-card">
+        <img class="pub-featured-image" src="/assets/images/al2o3-paper-figure.jpg" alt="Representative figure from Al2O3 paper">
+        <div class="pub-featured-body">
+          <h3 class="pub-featured-title">Melting and transport of Al₂O₃ at extreme conditions</h3>
+          <p class="pub-featured-text">A good candidate for a featured figure because it is central to your research identity and can visually convey phase behavior or transport trends clearly.</p>
+        </div>
+      </article>
+
+      <article class="pub-featured-card">
+        <img class="pub-featured-image" src="/assets/images/iron-diffusion-paper-figure.jpg" alt="Representative figure from iron diffusion paper">
+        <div class="pub-featured-body">
+          <h3 class="pub-featured-title">Cooperative diffusion in body-centered iron</h3>
+          <p class="pub-featured-text">This is another strong featured-paper choice because it is first-author work and has a distinctive scientific story that benefits from visualization.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+
+<script>
+  (function () {
+    const chips = document.querySelectorAll('.pub-chip');
+    const items = document.querySelectorAll('.pub-item');
+
+    chips.forEach(chip => {
+      chip.addEventListener('click', function () {
+        chips.forEach(c => c.classList.remove('is-active'));
+        this.classList.add('is-active');
+
+        const filter = this.dataset.filter;
+
+        items.forEach(item => {
+          const tags = item.dataset.tags || '';
+          if (filter === 'all' || tags.includes(filter)) {
+            item.classList.remove('pub-hidden');
+          } else {
+            item.classList.add('pub-hidden');
+          }
+        });
+      });
+    });
+  })();
+</script>
